@@ -18,10 +18,6 @@ void draw(){ //menjalnkan perintah secara berulang
   fill(#E8AE42); //Untuk Mewarnai dalam objek;
   ellipse(920, 70, 100, 100); //Matahari;
   
-  fill(#501C07); //Untuk Mewarnai dalam objek;
-  noStroke(); //biar gak ada garis tepi
-  rect(0,695,800,205);
-  
   x = x + 1; //berguna untuk menentukan kecepatan objek
   translate(100-x, height/2-2*size/0.6); //untuk menggerakan objek secara horizontal dari kanan ke kiri
   
@@ -30,25 +26,24 @@ void draw(){ //menjalnkan perintah secara berulang
   noStroke(); //Untuk menonaktifkan warna pada garis;
   quad(350,350, 700,350, 650,400, 420,400);
   
-  fill(#98350E);
+  fill(#98350E); //Warna Coklat;
   rect(420,250, 6,100); //Tiang Pendek;
   ellipse(423,250, 10,10);
   rect(500,150, 6,200); //Tiang Panjang;
   ellipse(503,150, 10,10);
   
-  fill(#B9ACA7);
+  fill(#B9ACA7); //Warna Abu-Abu;
   triangle(423,250, 480,320, 423,320); //Bendera Kecil;  
   triangle(503,150, 580,320, 503,320); //Bendera Besar;  
   
   //Komponen Rumah;
-  fill(#98350E);
-  rect(605,310, 60,40);
-  fill(#FFFFFF);
+  fill(#98350E); //Warna Coklat
+  rect(605,310, 60,40);  //Rumah;
+  fill(#FFFFFF); // Warna Putih;
   rect(620,320, 12,30); //Pintu;
-  fill(#FFFFFF);
+  fill(#FFFFFF); // Warna Putih;
   rect(640,320, 12,12); //Jendela;
-
-  fill(#501C07);
-  triangle(595,310, 635,290, 675,310);
+  fill(0);  // Warna Hitam;
+  triangle(595,310, 635,290, 675,310); // Atap Rumah;
 
 }
